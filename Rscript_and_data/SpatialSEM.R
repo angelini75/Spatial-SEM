@@ -240,7 +240,7 @@ MLIST.obs <- x2MLIST(out$par, MLIST)
 #### Prediction ################################################################
 # First we need a grid with locations of interest that contains the values of the
 # covariates
-s0.un <- read.csv("xy.csv")[,-1]
+s0.un <- read.csv("xy.csv")[,-1] # you have to uncompress the file (~23MB)
 s0.un <- s0.un[,names(data)[10:18]]
 s0 <- std(x = s0.un, st = ST[10:18,])
 summary(s0)
