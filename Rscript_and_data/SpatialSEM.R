@@ -361,6 +361,7 @@ variance
 
 #### Loop to predict several locations usin doParallel ####
 # Not run. This may take several hours
+s <- as.matrix(data[,-18])
 library(doParallel)
 XX <- number of core processors
 registerDoParallel(cores = XX) # with 48 cores it took 6.5 hours
